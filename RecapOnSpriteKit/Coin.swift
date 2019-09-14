@@ -26,9 +26,10 @@ class Coin: SKSpriteNode {
     
     func setup() {
         physicsBody = SKPhysicsBody(circleOfRadius: size.width / 2)
+        physicsBody?.isDynamic = false
         
         physicsBody?.categoryBitMask = PhysicsCatagory.Coin
-        physicsBody?.collisionBitMask = PhysicsCatagory.None
+        physicsBody?.collisionBitMask = PhysicsCatagory.Ground
         physicsBody?.contactTestBitMask = PhysicsCatagory.Player
     }
     

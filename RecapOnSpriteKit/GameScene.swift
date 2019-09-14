@@ -32,13 +32,13 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
     
     
     func setup() {
+        physicsWorld.contactDelegate = self
         addChild(_player)
-        addChild(_cameraNode)
-        
         _player.position.x = size.width / 2
         _player.position.y = size.height / 2
         _player.zPosition = 1
         
+        addChild(_cameraNode)
         camera = _cameraNode
         _cameraNode.position.x = size.width / 2
         _cameraNode.position.y = size.height / 2
@@ -87,8 +87,8 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         }
         
         
-        _player.physicsBody?.velocity = CGVector(dx: 3000 * deltaTime, dy: 0)
-//        _player.position.x += 80 * CGFloat(deltaTime)
+//        _player.physicsBody?.velocity = CGVector(dx: 3000 * deltaTime, dy: 0)
+        _player.position.x += 100 * CGFloat(deltaTime)
 //        _player.physicsBody?.applyForce(CGVector(dx: 40, dy: 0))
         
         _cameraNode.position.x = _player.position.x
@@ -118,11 +118,11 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
     
     func didBegin(_ contact: SKPhysicsContact) {
         let collision = contact.bodyA.categoryBitMask | contact.bodyB.categoryBitMask
-        
+        print("THIS IS HIT")
         if (collision == PhysicsCatagory.Coin | PhysicsCatagory.Player) {
             print("contact player and coin")
-        } else {
-            
+        } else if (collision == PhysicsCatagory.Enemy | PhysicsCatagory.Player){
+            print("YOU DIED")
         }
     }
 }
