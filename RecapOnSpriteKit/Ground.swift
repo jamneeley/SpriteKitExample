@@ -26,6 +26,9 @@ class Ground: SKSpriteNode {
         physicsBody = SKPhysicsBody(rectangleOf: size)
         physicsBody?.isDynamic = false //static and is not affected by things like gravity
         
+        physicsBody?.categoryBitMask = PhysicsCatagory.Ground
+        physicsBody?.collisionBitMask = PhysicsCatagory.Player
+        physicsBody?.contactTestBitMask = PhysicsCatagory.None
     }
     
 }

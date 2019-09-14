@@ -28,8 +28,11 @@ class Player: SKSpriteNode {
     
     func setup() {
         physicsBody = SKPhysicsBody(rectangleOf: size)
+        physicsBody?.allowsRotation = false
         
-        
-        
+        physicsBody?.categoryBitMask = PhysicsCatagory.Player
+        physicsBody?.collisionBitMask = PhysicsCatagory.Ground
+        physicsBody?.contactTestBitMask = PhysicsCatagory.Coin | PhysicsCatagory.Enemy
+
     }
 }
