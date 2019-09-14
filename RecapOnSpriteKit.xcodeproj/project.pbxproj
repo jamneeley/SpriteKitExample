@@ -18,6 +18,7 @@
 		9DE05576232B066800D29561 /* Landscape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DE05575232B066800D29561 /* Landscape.swift */; };
 		9DE05578232C814200D29561 /* PhysicsCatagory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DE05577232C814200D29561 /* PhysicsCatagory.swift */; };
 		9DE0557A232C836300D29561 /* Coin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DE05579232C836300D29561 /* Coin.swift */; };
+		9DE0557C232CC0B700D29561 /* Enemy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DE0557B232CC0B700D29561 /* Enemy.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		9DE05575232B066800D29561 /* Landscape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Landscape.swift; sourceTree = "<group>"; };
 		9DE05577232C814200D29561 /* PhysicsCatagory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhysicsCatagory.swift; sourceTree = "<group>"; };
 		9DE05579232C836300D29561 /* Coin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coin.swift; sourceTree = "<group>"; };
+		9DE0557B232CC0B700D29561 /* Enemy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enemy.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,13 +73,14 @@
 				9DE0556D2328942F00D29561 /* GameScene.swift */,
 				9DE05575232B066800D29561 /* Landscape.swift */,
 				9DE055732329FD0200D29561 /* Ground.swift */,
+				9DE05577232C814200D29561 /* PhysicsCatagory.swift */,
 				9DE055712329FB8D00D29561 /* Player.swift */,
 				9DE05579232C836300D29561 /* Coin.swift */,
 				9DE0556F2329F2D100D29561 /* Main.storyboard */,
 				9DBA21A123288D2100EDDACE /* Assets.xcassets */,
 				9DBA21A323288D2100EDDACE /* LaunchScreen.storyboard */,
 				9DBA21A623288D2100EDDACE /* Info.plist */,
-				9DE05577232C814200D29561 /* PhysicsCatagory.swift */,
+				9DE0557B232CC0B700D29561 /* Enemy.swift */,
 			);
 			path = RecapOnSpriteKit;
 			sourceTree = "<group>";
@@ -158,6 +161,7 @@
 				9DE0556E2328942F00D29561 /* GameScene.swift in Sources */,
 				9DE05578232C814200D29561 /* PhysicsCatagory.swift in Sources */,
 				9DBA219D23288D1F00EDDACE /* GameViewController.swift in Sources */,
+				9DE0557C232CC0B700D29561 /* Enemy.swift in Sources */,
 				9DBA219B23288D1F00EDDACE /* AppDelegate.swift in Sources */,
 				9DE0557A232C836300D29561 /* Coin.swift in Sources */,
 				9DE055742329FD0200D29561 /* Ground.swift in Sources */,

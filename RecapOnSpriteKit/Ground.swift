@@ -27,7 +27,7 @@ class Ground: SKSpriteNode {
         physicsBody?.isDynamic = false //static and is not affected by things like gravity
         
         physicsBody?.categoryBitMask = PhysicsCatagory.Ground
-        physicsBody?.collisionBitMask = PhysicsCatagory.Player
+        physicsBody?.collisionBitMask = PhysicsCatagory.Player | PhysicsCatagory.Coin
         physicsBody?.contactTestBitMask = PhysicsCatagory.None
     }
     
